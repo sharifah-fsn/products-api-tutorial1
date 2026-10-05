@@ -1,43 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mxfile host="app.diagrams.net" modified="2026-10-05T06:43:09.000Z" agent="ChatGPT" version="24.7.17" type="device">
-  <diagram id="customer-address" name="CustomerAddress">
-    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+<mxfile host="app.diagrams.net" modified="2026-10-05T12:19:00.000Z" agent="ChatGPT" version="26.0.0" type="device">
+  <diagram id="CustomerAddress" name="CustomerAddress">
+    <mxGraphModel dx="1200" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
-        <mxCell id="customer" value="&lt;b&gt;Customer&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;rounded=0;html=1;whiteSpace=wrap;container=1;collapsible=0;recursiveResize=0;" vertex="1" parent="1">
-          <mxGeometry x="100" y="160" width="440" height="360" as="geometry"/>
+
+        <!-- Customer UML class -->
+        <mxCell id="customer" value="Customer" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;rounded=0;fillColor=#ffffff;strokeColor=#000000;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="120" y="180" width="430" height="330" as="geometry"/>
         </mxCell>
-        <mxCell id="customer-attrs" value="- id : Long&lt;br&gt;- name : String&lt;br&gt;- email : String&lt;br&gt;- address : Address" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;spacingRight=4;whiteSpace=wrap;html=1;" vertex="1" parent="customer">
-          <mxGeometry y="30" width="440" height="100" as="geometry"/>
+        <mxCell id="customer_attrs" value="- id : Long&lt;br&gt;- name : String&lt;br&gt;- email : String&lt;br&gt;- address : Address&lt;br&gt;&lt;u&gt;+ customerCount : int&lt;/u&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8;whiteSpace=wrap;fontSize=13;" vertex="1" parent="customer">
+          <mxGeometry y="30" width="430" height="110" as="geometry"/>
         </mxCell>
-        <mxCell id="customer-methods" value="+ Customer()&lt;br&gt;+ Customer(id : Long, name : String, email : String, address : Address)&lt;br&gt;+ getId() : Long&lt;br&gt;+ getName() : String&lt;br&gt;+ getEmail() : String&lt;br&gt;+ getAddress() : Address" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;spacingRight=4;whiteSpace=wrap;html=1;" vertex="1" parent="customer">
-          <mxGeometry y="130" width="440" height="230" as="geometry"/>
-        </mxCell>
-        <mxCell id="customer-divider1" style="line;strokeWidth=1;fillColor=none;" vertex="1" parent="customer">
-          <mxGeometry y="30" width="440" height="0" as="geometry"/>
-        </mxCell>
-        <mxCell id="customer-divider2" style="line;strokeWidth=1;fillColor=none;" vertex="1" parent="customer">
-          <mxGeometry y="130" width="440" height="0" as="geometry"/>
+        <mxCell id="customer_methods" value="+ Customer()&lt;br&gt;+ Customer(id : Long, name : String, email : String, address : Address)&lt;br&gt;+ getId() : Long&lt;br&gt;+ getName() : String&lt;br&gt;+ getEmail() : String&lt;br&gt;+ getAddress() : Address&lt;br&gt;&lt;u&gt;+ getCustomerCount() : int&lt;/u&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8;whiteSpace=wrap;fontSize=13;" vertex="1" parent="customer">
+          <mxGeometry y="140" width="430" height="190" as="geometry"/>
         </mxCell>
 
-        <mxCell id="address" value="&lt;b&gt;Address&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;rounded=0;html=1;whiteSpace=wrap;container=1;collapsible=0;recursiveResize=0;" vertex="1" parent="1">
-          <mxGeometry x="700" y="160" width="440" height="300" as="geometry"/>
+        <!-- Address UML class -->
+        <mxCell id="address" value="Address" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;rounded=0;fillColor=#ffffff;strokeColor=#000000;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="680" y="180" width="430" height="270" as="geometry"/>
         </mxCell>
-        <mxCell id="address-attrs" value="- street : String&lt;br&gt;- city : String&lt;br&gt;- postcode : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;spacingRight=4;whiteSpace=wrap;html=1;" vertex="1" parent="address">
-          <mxGeometry y="30" width="440" height="80" as="geometry"/>
+        <mxCell id="address_attrs" value="- street : String&lt;br&gt;- city : String&lt;br&gt;- postcode : String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8;whiteSpace=wrap;fontSize=13;" vertex="1" parent="address">
+          <mxGeometry y="30" width="430" height="90" as="geometry"/>
         </mxCell>
-        <mxCell id="address-methods" value="+ Address()&lt;br&gt;+ Address(street : String, city : String, postcode : String)&lt;br&gt;+ getStreet() : String&lt;br&gt;+ getCity() : String&lt;br&gt;+ getPostcode() : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;spacingRight=4;whiteSpace=wrap;html=1;" vertex="1" parent="address">
-          <mxGeometry y="110" width="440" height="190" as="geometry"/>
-        </mxCell>
-        <mxCell id="address-divider1" style="line;strokeWidth=1;fillColor=none;" vertex="1" parent="address">
-          <mxGeometry y="30" width="440" height="0" as="geometry"/>
-        </mxCell>
-        <mxCell id="address-divider2" style="line;strokeWidth=1;fillColor=none;" vertex="1" parent="address">
-          <mxGeometry y="110" width="440" height="0" as="geometry"/>
+        <mxCell id="address_methods" value="+ Address()&lt;br&gt;+ Address(street : String, city : String, postcode : String)&lt;br&gt;+ getStreet() : String&lt;br&gt;+ getCity() : String&lt;br&gt;+ getPostcode() : String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8;whiteSpace=wrap;fontSize=13;" vertex="1" parent="address">
+          <mxGeometry y="120" width="430" height="150" as="geometry"/>
         </mxCell>
 
-        <mxCell id="association" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeWidth=1.5;" edge="1" parent="1" source="customer" target="address">
+        <!-- One solid association: Customer -> Address -->
+        <mxCell id="customer_to_address" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;endArrow=open;endFill=0;startArrow=none;" edge="1" parent="1" source="customer" target="address">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
       </root>
