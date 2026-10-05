@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-10-05T06:43:09.000Z" agent="ChatGPT" version="24.7.17" type="device">
+  <diagram id="customer-address" name="CustomerAddress">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="customer" value="&lt;b&gt;Customer&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;rounded=0;html=1;whiteSpace=wrap;container=1;collapsible=0;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="160" width="440" height="360" as="geometry"/>
+        </mxCell>
+        <mxCell id="customer-attrs" value="- id : Long&lt;br&gt;- name : String&lt;br&gt;- email : String&lt;br&gt;- address : Address" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;spacingRight=4;whiteSpace=wrap;html=1;" vertex="1" parent="customer">
+          <mxGeometry y="30" width="440" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="customer-methods" value="+ Customer()&lt;br&gt;+ Customer(id : Long, name : String, email : String, address : Address)&lt;br&gt;+ getId() : Long&lt;br&gt;+ getName() : String&lt;br&gt;+ getEmail() : String&lt;br&gt;+ getAddress() : Address" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;spacingRight=4;whiteSpace=wrap;html=1;" vertex="1" parent="customer">
+          <mxGeometry y="130" width="440" height="230" as="geometry"/>
+        </mxCell>
+        <mxCell id="customer-divider1" style="line;strokeWidth=1;fillColor=none;" vertex="1" parent="customer">
+          <mxGeometry y="30" width="440" height="0" as="geometry"/>
+        </mxCell>
+        <mxCell id="customer-divider2" style="line;strokeWidth=1;fillColor=none;" vertex="1" parent="customer">
+          <mxGeometry y="130" width="440" height="0" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="address" value="&lt;b&gt;Address&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;rounded=0;html=1;whiteSpace=wrap;container=1;collapsible=0;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="700" y="160" width="440" height="300" as="geometry"/>
+        </mxCell>
+        <mxCell id="address-attrs" value="- street : String&lt;br&gt;- city : String&lt;br&gt;- postcode : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;spacingRight=4;whiteSpace=wrap;html=1;" vertex="1" parent="address">
+          <mxGeometry y="30" width="440" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="address-methods" value="+ Address()&lt;br&gt;+ Address(street : String, city : String, postcode : String)&lt;br&gt;+ getStreet() : String&lt;br&gt;+ getCity() : String&lt;br&gt;+ getPostcode() : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;spacingRight=4;whiteSpace=wrap;html=1;" vertex="1" parent="address">
+          <mxGeometry y="110" width="440" height="190" as="geometry"/>
+        </mxCell>
+        <mxCell id="address-divider1" style="line;strokeWidth=1;fillColor=none;" vertex="1" parent="address">
+          <mxGeometry y="30" width="440" height="0" as="geometry"/>
+        </mxCell>
+        <mxCell id="address-divider2" style="line;strokeWidth=1;fillColor=none;" vertex="1" parent="address">
+          <mxGeometry y="110" width="440" height="0" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="association" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeWidth=1.5;" edge="1" parent="1" source="customer" target="address">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
