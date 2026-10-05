@@ -5,6 +5,7 @@ public class Product {
     private String name;
     private double price;
 
+
     public Product() {}
 
     public Product(Long id, String name, double price) {
