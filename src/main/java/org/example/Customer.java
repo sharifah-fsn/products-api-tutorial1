@@ -23,7 +23,7 @@ public class Customer {
     public String getName() { return name; }
     public String getEmail() { return email; }
     public Address getAddress() { return address; }
-    public static int getCustomerCount{
+    public static int getCustomerCount(){
         return customerCount;
     }
 }
