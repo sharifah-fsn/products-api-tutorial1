@@ -11,6 +11,17 @@ public class ProductService {
     private List<Product> products =new ArrayList<>();
     private Long nextId= 1L;
 
+    public ProductService() {
+        products.add(new DigitalProduct(
+                1L, "E-Book", 1500.00, "https://example.com/ebook",345.7
+        ));
+
+        products.add(new PhysicalProduct(
+                2L, "Keyboard", 8500.00, 10,"45 x 3 x 15"
+        ));
+        nextId=3L;
+    }
+
     public List<Product> getAllProducts (){
         return products;
     }
